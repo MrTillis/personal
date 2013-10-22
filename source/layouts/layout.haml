@@ -1,0 +1,11 @@
+!!!5
+%head
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  %title= current_page.data.title || "Reed Tillis"
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  = javascript_include_tag "moment.min", "script"
+  = stylesheet_link_tag "normalize", "style"
+
+%body
+  = yield

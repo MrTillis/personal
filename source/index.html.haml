@@ -1,0 +1,31 @@
+---
+title: Reed Tillis
+---
+
+%div.clockcontainer
+  %div#clock.dark
+    %div.display
+      %div.weekdays
+      %div.ampm
+      %div.alarm
+      %div.digits
+
+  %div.button-holder
+    %a.button Switch Theme
+
+%div.ref
+  %ul
+    %li= link_to 'Interests', '#'
+    %li= link_to 'Education', '#'
+    %li= link_to 'Work Experience', '#'
+    %li= link_to 'Gallery', '#'
+    %li= link_to 'Mission Statement', '#'
+
+%div.clearfloats
+  %img{ src: 'http://i.imgur.com/CUZQkJA.jpg' }
+  %button Like
+  %p Hi! I'm Reed, an intern at KYN Developers.
+  %p Feel free to take a look around. Say Hello!
+  %input{ type: 'comment', placeholder: 'Your name' }
+  %input{ type: 'email', placeholder: 'Your email' }
+  %input{ type: 'submit' }
