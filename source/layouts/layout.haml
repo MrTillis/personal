@@ -2,10 +2,36 @@
 %head
   <meta charset="utf-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   %title= current_page.data.title || "Reed Tillis"
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   = javascript_include_tag "moment.min", "script"
   = stylesheet_link_tag "normalize", "style"
+  %link{href: "http://static.ak.fbcdn.net/rsrc.php/zD5ZK/hash/4146lpfk.css", rel: "stylesheet", type: "text/css"}
 
 %body
-  = yield
+  %header
+    %div.ref
+      %ul#navigation
+        %li= link_to 'Home', 'index.html'
+        %li= link_to 'About', 'about.html'
+        %li= link_to 'Interests', 'interests.html'
+        %li= link_to 'Gallery', 'gallery.html'
+        %li= link_to 'Mission Statement', 'mStatement.html'
+        %li= link_to 'Resume', 'https://docs.google.com/file/d/0B30QS7xvx4F4aDc4Q2x1T3l5QWs/edit?usp=drive_web'
+
+    %div.clockcontainer
+      %div#clock.dark
+        %div.display
+          %div.weekdays
+          %div.ampm
+          %div.alarm
+          %div.digits
+
+      %div.button-holder
+        %a.button Switch Theme
+  %main.clearfloats
+    = yield
+
+  %footer
+    © Copyright 2013 - present Reed Leon Tillis IV unless otherwise noted.
