@@ -11,14 +11,16 @@
 
 %body
   %header
-    %div.ref
-      %ul#navigation
+    .navigation-menu
+      %p.menu= current_page.data.title
+    .navigation
+      %ul.nav
         %li= link_to 'Home', 'index.html'
         %li= link_to 'About', 'about.html'
         %li= link_to 'Interests', 'interests.html'
         %li= link_to 'Gallery', 'gallery.html'
         %li= link_to 'Mission Statement', 'mStatement.html'
-        %li= link_to 'Resume', 'https://docs.google.com/file/d/0B30QS7xvx4F4aDc4Q2x1T3l5QWs/edit?usp=drive_web'
+        %li= link_to 'Resume', 'https://docs.google.com/document/d/1uTLaOqC-xrkJGBKq-0zyvgu6eeaUNmbiFY9QOiVmw9Q/edit?usp=sharing'
 
     %div.clockcontainer
       %div#clock.dark

@@ -103,4 +103,16 @@
       clock.toggleClass('light dark');
     });
 
+    $('.navigation-menu').on('click', function(){
+        $('.navigation').toggle();
+    });
+
+    $(window).on('resize', function() {
+        if ($('.navigation-menu:visible').length) {
+            $('.navigation').hide();    
+        } else {
+            $('.navigation').show();
+        }
+    });
+
   });

@@ -58,8 +58,7 @@ p {
 	}
 p.interests{
 	/*position: relative;*/
-	padding: 25px;
-	float: right;
+	margin-bottom: 20px;
 	padding-bottom: 30px;
 	}
 h1#about{
@@ -70,8 +69,8 @@ h1#about{
 	}
 p#about2{
 	float:left;
-	padding-left: 200px;
 	font-size: 30px;
+	margin: 0 100px;
 	width: 90%;
 	text-align: left;
 	}
@@ -87,34 +86,19 @@ img#homepic {
 	margin: auto;
 	display: inline-block;
 	}
-img.droid{
+#wrapper img{
 	width: 500px;
-	height: 400px;
-	float: right;
-	}
-img.gator{
-	width: 500px;
-	height: 400px;
-	float: right;
-	}
-img.xda{
-	width: 500px;
-	height: 90px;
-	float: right;
-	}
-img.robot{
-	width: 500px;
-	height: 400px;
-	float: right;
-	}
-img.gaming{
-	width: 500px;
-	height: 400px;
-	float: right;
 	}
 .mState{
-	margin: 0 auto;
-	padding: 500px;
+	margin: 40px 200px;
+	}
+.navigation {
+	background: #272e38;
+	}
+.navigation-menu {
+	background: #272e38;
+	width: 100%;
+	padding: 10px 0;
 	}
 footer {
 	position: absolute;
@@ -133,16 +117,19 @@ input[type="submit"] {
 	background: red;
 	color: white;
 	}
-ul#navigation {
+ul.nav {
 	padding: 15px;
 	background: #272e38;
-	margin: 13px 0px;
+	margin-bottom: 0;
 	}
 li {
 	display: inline;
 	padding: 0px 10px 0px 10px;
 	list-style-type:none; 
 	}
+a {
+	font-size: 22px;
+}
 a:link, a:visited {
 	text-decoration: underline;
 	color: white;
@@ -152,9 +139,10 @@ a:hover, a:active {
 	text-decoration: underline overline;
 	color: white;
 	background-color: red;
+	font-size: 25px;
 	}
-.ref {
-	float: left;
+.navigation{
+	/*float: left;*/
 	display: inline-block;
 	width: 100%;
 	margin-top: -16px;
@@ -164,7 +152,6 @@ a:hover, a:active {
 	clear: both;
 	display: block;
 	}
-
 	main {
 		overflow: hidden;
 	}
@@ -240,6 +227,7 @@ a:hover, a:active {
 	#clock.light .display{
 	background-color:#dddddd;
 	box-shadow:0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px #fafafa;
+	border: solid 1px red;
 	}
 
 
@@ -251,6 +239,7 @@ a:hover, a:active {
 	#clock.dark{
 	background-color:#272e38;
 	color:#cacaca;
+	border: solid 1px white;
 	}
 
 	#clock.dark:after{
@@ -524,17 +513,38 @@ a:hover, a:active {
 	opacity:0.9;
 	}
 
+@media (min-width: 501px) {
+	.navigation-menu {
+		display: none;
+
+	}
+}
+
+
+
 @media (max-width: 500px) {
+.navigation {
+	display: none;
+	padding: 0px;
+}
+
+
 h1 {
 	font-size: 36px; 
 	}
-	.ref{
-		width: 95%;
-		padding-left: 10px;
-	}
-li {
+ul.nav {
+	padding: 0;
+	border-bottom: solid 1px white;	
+}
+ul.nav li{
 	display: block;
-	padding: 3px;
+	padding: 5px;
+	font-size: 25px;
+	border-top: solid 1px white;
+}
+.nav li {
+	display: block;
+	padding: 5px;
 	font-size: 25px;
 	}
 body {
@@ -559,34 +569,14 @@ img#homepic {
 	}
 #wrapper{
 	padding: 0;
-	margin: 5px 50px;
+	width: 250px;
+	margin: 5px auto;
 	display: inline-block;
 		}
-img.droid{
+#wrapper img{
 	width: 250px;
-	height: 200px;
-	float: right;
 	}
-img.gator{
-	width: 250px;
-	height: 200px;
-	float: right;
-	}
-img.xda{
-	width: 250px;
-	height: 45px;
-	float: right;
-	}
-img.robot{
-	width: 250px;
-	height: 200px;
-	float: right;
-	}
-img.gaming{
-	width: 250px;
-	height: 200px;
-	float: right;
-	}
+
 footer {
 	position: absolute;
 	height: 20px;
@@ -594,7 +584,7 @@ footer {
 	padding: 5px 0px 0px 0px;
 	width: 100%;
 	box-sizing: border-box;
-	font-size: 12px;
+	font-size: 10px;
 	}
 h1#about{
 	color: white;
@@ -615,14 +605,13 @@ p#about2{
 	overflow:hidden; 
 	width:400px; 
 	height:2100px; 
-	border:0; 
 	background: transparent;
 	}
 #gallery li {
 	float:left;
 	}
 #gallery li a {
-	padding-left: 50px;
+	padding-left: 25px;
 	padding-top: 40px;
 	display:block; 
 	height:50px;
@@ -644,7 +633,6 @@ p#about2{
 	height:300px;
 	}
 .mState{
-	margin: 0 auto;
-	padding: 0;
+	margin: 20px 20px;
 	}
 }
